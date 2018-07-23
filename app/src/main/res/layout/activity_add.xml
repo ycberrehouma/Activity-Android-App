@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.activity.Add">
+
+    <TextView
+        android:text="3rd Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView23"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView24"
+        android:textColor="@android:color/black" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Enter activity name"
+        android:ems="10"
+        android:id="@+id/etname2"
+        android:layout_alignBaseline="@+id/textView23"
+        android:layout_alignBottom="@+id/textView23"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="12sp"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Enter activity name"
+        android:ems="10"
+        android:id="@+id/etname1"
+        android:layout_alignBaseline="@+id/textView22"
+        android:layout_alignBottom="@+id/textView22"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="12sp"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <ImageButton
+        android:layout_width="70px"
+        android:layout_height="50px"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        android:id="@+id/imageButton11"
+        android:onClick="PreviousPage (Add)"
+        android:src="@drawable/chevron-left"
+        android:background="@android:color/background_light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:tint="@android:color/holo_purple" />
+    <Button
+        android:text="@string/home_button"
+        android:layout_width="75dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/button"
+        android:onClick="homePage (MainActivity)"
+        android:textColor="@android:color/background_light"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textAllCaps="false" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:id="@+id/imageButton"
+        android:layout_alignTop="@+id/button4"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/add_button"
+        android:onClick="AddPage (MainActivity)"
+        android:backgroundTint="@android:color/transparent"
+        android:tint="?android:attr/colorActivatedHighlight" />
+
+
+    <Button
+
+        android:text="@string/diary_button"
+        android:layout_width="75dp"
+        android:layout_height="42dp"
+        android:id="@+id/button2"
+        android:onClick="diaryPage (MainActivity)"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/imageButton"
+        android:layout_toStartOf="@+id/imageButton"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textAllCaps="false" />
+
+    <Button
+        android:text="@string/more_button"
+        android:layout_width="75dp"
+        android:layout_height="42dp"
+        android:id="@+id/button3"
+        android:onClick="MorePage (MainActivity)"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageButton"
+        android:layout_toEndOf="@+id/imageButton"
+        android:layout_marginLeft="73dp"
+        android:layout_marginStart="73dp"
+        android:textColor="@android:color/background_light"
+        android:textAllCaps="false"
+        android:backgroundTint="@android:color/holo_blue_dark" />
+
+    <Button
+        android:text="@string/Stats_button"
+        android:layout_width="75dp"
+        android:layout_height="42dp"
+        android:id="@+id/button4"
+        android:onClick="statsPage (MainActivity)"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageButton"
+        android:layout_toEndOf="@+id/imageButton"
+        android:textColor="@android:color/background_light"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:text="1st Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:id="@+id/textView22"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/imageButton11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:id="@+id/imageButton10"
+        android:onClick="AddActivity (Add)"
+        android:tint="?android:attr/colorActivatedHighlight"
+        android:background="@android:color/background_light"
+        android:layout_below="@+id/etname3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_marginTop="48dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Enter activity name"
+        android:ems="10"
+        android:id="@+id/etname3"
+        android:textSize="12sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_alignBaseline="@+id/textView24"
+        android:layout_alignBottom="@+id/textView24"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="2nd Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView23"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/etname1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

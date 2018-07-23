@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.activity.MainActivity">
+
+    <Button
+        android:text="@string/home_button"
+        android:layout_width="75dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/button"
+        android:onClick="homePage (MainActivity)"
+        android:textColor="@android:color/background_light"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textAllCaps="false" />
+
+
+    <ImageButton
+        android:text="add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:id="@+id/imageButton"
+        android:layout_alignTop="@+id/button4"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/add_button"
+        android:onClick="AddPage (MainActivity)"
+        android:backgroundTint="@android:color/transparent"
+        android:tint="?android:attr/colorActivatedHighlight" />
+
+
+    <Button
+
+        android:text="@string/diary_button"
+        android:layout_width="75dp"
+        android:layout_height="42dp"
+        android:id="@+id/button2"
+        android:onClick="diaryPage (MainActivity)"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/imageButton"
+        android:layout_toStartOf="@+id/imageButton"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textAllCaps="false" />
+
+    <Button
+        android:text="@string/more_button"
+        android:layout_width="75dp"
+        android:layout_height="42dp"
+        android:id="@+id/button3"
+        android:onClick="MorePage (MainActivity)"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageButton"
+        android:layout_toEndOf="@+id/imageButton"
+        android:layout_marginLeft="73dp"
+        android:layout_marginStart="73dp"
+        android:textColor="@android:color/background_light"
+        android:textAllCaps="false"
+        android:backgroundTint="@android:color/holo_blue_dark" />
+
+    <Button
+        android:text="@string/Stats_button"
+        android:layout_width="75dp"
+        android:layout_height="42dp"
+        android:id="@+id/button4"
+        android:onClick="statsPage (MainActivity)"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageButton"
+        android:layout_toEndOf="@+id/imageButton"
+        android:textColor="@android:color/background_light"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="58dp"
+        android:id="@+id/textView6"
+        android:text="Quote of the day:"
+        android:textColor="?android:attr/textColorSearchUrl"
+        android:textStyle="normal|bold"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView4"
+        tools:text="I hated every minute of training, but I said, 'Don't quit. Suffer now and live the rest of your life as a champion.' Muhammad Ali "
+        android:textSize="16sp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="@string/welcome"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="23dp"
+        android:id="@+id/textView3"
+        tools:text="Welcome to Daily Tracker"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+    <TextView
+        android:text="Make Each Day Count!"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textStyle="normal|bold"
+        android:textSize="16sp"
+        android:fontFamily="casual"
+        android:layout_above="@+id/imageButton"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="66dp" />
+
+</RelativeLayout>
